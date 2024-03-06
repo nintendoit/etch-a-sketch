@@ -1,0 +1,21 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vh;
+}
+
+/* For creating a responsive square */
+.square {
+  width: 5vh;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* Afer hovering */
+.hovered {
+  background-color: black;
+}
