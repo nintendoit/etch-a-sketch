@@ -4,11 +4,6 @@
   width: 960px;
 }
 
-/* For creating a responsive square */
-/* .square {
-  width: 60px;
-} */
-
 .square:after {
   content: "";
   display: block;
@@ -17,5 +12,5 @@
 
 /* Afer hovering */
 .hovered {
-  background-color: black;
+  background-color: rgb(0 0 0);
 }

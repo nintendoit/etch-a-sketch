@@ -3,6 +3,10 @@ const button = document.querySelector("button");
 
 let numOfSqrsPerSide = 0;
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 button.addEventListener("click", () => {
   // Set limit for number(positive and less than 100)
   do {
@@ -26,7 +30,10 @@ button.addEventListener("click", () => {
     div.classList.add("square");
     container.appendChild(div);
     div.addEventListener("mouseenter", () => {
-      div.classList.add("hovered");
+      // div.classList.add("hovered");
+      div.style.backgroundColor = `rgb(${getRandomInt(256)} ${getRandomInt(
+        256
+      )} ${getRandomInt(256)})`;
     });
   }
 });
