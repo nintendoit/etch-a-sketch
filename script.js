@@ -25,8 +25,13 @@ button.addEventListener("click", () => {
     div.style.width = `${960 / numOfSqrsPerSide}px`;
     div.classList.add("square");
     container.appendChild(div);
+    let brightnessDiv = 100;
+    div.style.filter = `brightness(${brightnessDiv}%)`;
     div.addEventListener("mouseenter", () => {
-      div.classList.add("hovered");
+      brightnessDiv -= 10;
+      if (brightnessDiv >= 0) {
+        div.style.filter = `brightness(${brightnessDiv}%)`;
+      }
     });
   }
 });
